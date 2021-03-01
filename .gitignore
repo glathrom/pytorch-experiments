@@ -1,1 +1,9 @@
 .ipynb_checkpoints/
+notes/*.aux
+notes/*.bbl
+notes/*.blg
+notes/*.dvi
+notes/*.log
+notes/*.out
+notes/*.pdf
+notes/*.ps
