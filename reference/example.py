@@ -12,7 +12,7 @@ class NN(nn.Module):
     def __init__(self, input_dim, output_dim):
         super().__init__()
         self.fc1 = nn.Linear(input_dim, 2)
-        # self.fc2 = nn.Linear(50, output_dim)
+        # self.fc2 = nn.Linear(50, output_diM)
 
 
     def forward(self,x):
@@ -77,6 +77,7 @@ for epoch in range(num_epochs):
 
         # run the data through the model
         scores = model(data)
+        loss = criterion(scores,targets)
 
         # zero all the gradients
         optimizer.zero_grad()
