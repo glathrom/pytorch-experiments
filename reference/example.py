@@ -97,7 +97,6 @@ def check_accuracy(loader, model):
 
     with torch.no_grad():
         for x,y in loader:
-            # loading data as modified for gaussian model
 
             scores = model(x)
             _, predictions = scores.max(1)
